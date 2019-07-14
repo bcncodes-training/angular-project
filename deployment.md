@@ -244,11 +244,7 @@ El modificador --prod es lo que asegura que la compilación de tu aplicación pa
 
 Según el tipo de aplicación que tengamos, existen diferentes servicios de hospedaje. Por ejemplo, una aplicación cliente, como por ejemplo un álbum de imágenes, no necesitará un tipo de *backend* especial. Sólo necesitará un servidor que hospede ficheros estáticos.
 
-<div style="margin: 50px auto; min-height: 100px;">
-
-<img style="float: left;" src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_f861c1f3073e13eafd52ad1704427e25.png">
-
-</div>
+![](https://imgur.com/pmWWbYp.png)
 
 En el caso de que queramos desplegar la aplicación sin el *backend* también podemos utilizar la opción de [Github pages](https://pages.github.com/), que permite subir código directamente usando un repositorio de git. 
 
@@ -266,17 +262,11 @@ Aquí lo haremos sin utilizar el cliente `angular-CLI`.
 - Haremos commit de los cambios y push:
 - En la página de `settings` de GitHub configuraremos para publicar el proyecto desde la carpeta `/docs`(2ª opción).
 - El proyecto se desplegará en: 
-`https://<user_name>.github.io/<project_name>/
-`
+`https://<user_name>.github.io/<project_name>/`
 
-<div style="margin: 50px auto; min-height: 100px;">
+![](https://imgur.com/7SsOkRk.png)
 
-
-<img style="float: left" width="350" src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_788898ea19304c521e348bc2755db363.png">
-
-</div>
-
-En el caso de aplicaciones más complejas, necesitamos exponer nuestra propia API. Github pages no permite realizar cambios en el `backend` (no es el propósito de la plataforma) así que necesitamos un servicio diferente, usaremos [Heroku](https://www.heroku.com/).
+En el caso de aplicaciones más complejas, necesitamos exponer nuestra propia API. Github pages no permite realizar cambios en el `_backend_` (no es el propósito de la plataforma) así que necesitamos un servicio diferente, usaremos [Heroku](https://www.heroku.com/) para desplegar nuestra API.
 
 #### Prerequisitos
 
