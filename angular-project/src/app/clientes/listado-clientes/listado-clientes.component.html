@@ -1,0 +1,15 @@
+<h2>
+  Listado clientes
+</h2>
+<div *ngIf="! clientes.length">No hay clientes por el momento</div>
+<div>
+  <app-item-cliente 
+    *ngFor="let cliente of clientes" 
+    [cliente]="cliente"
+    (borrarCliente)="doBorrarCliente($event)"
+  ></app-item-cliente>
+</div>
+
+<p>
+  {{ clientes$ | async | json }}
+</p>
